@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDS RevealJS Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/monokai.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title Slide with Email -->
+            <section>
+                <h1>TDS Presentation</h1>
+                <h3>Data Science & Analytics</h3>
+                <p>
+                    <small>Created by <a href="mailto:23f3001608@ds.study.iitm.ac.in">23f3001608@ds.study.iitm.ac.in</a></small>
+                </p>
+                <aside class="notes">
+                    Welcome to this presentation! This is the opening slide.
+                    Remember to introduce yourself and the topic.
+                </aside>
+            </section>
+
+            <!-- Slide 2: Markdown Slide with Fragments -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## What is Data Science?
+                    
+                    Data science combines:
+                    - Statistics <!-- .element: class="fragment" data-fragment-index="1" -->
+                    - Programming <!-- .element: class="fragment" data-fragment-index="2" -->
+                    - Domain Knowledge <!-- .element: class="fragment" data-fragment-index="3" -->
+                    - Machine Learning <!-- .element: class="fragment" data-fragment-index="4" -->
+
+                    Note:
+                    This slide demonstrates the key components of data science.
+                    Each element will appear one by one to build understanding progressively.
+                </textarea>
+            </section>
+
+            <!-- Slide 3: Code Sample with Syntax Highlighting -->
+            <section>
+                <h2>Python Code Example</h2>
+                <pre><code class="python" data-trim data-line-numbers="1-2|3-5|6-8">
+import pandas as pd
+import numpy as np
+
+# Load and process data
+df = pd.read_csv('data.csv')
+df_clean = df.dropna()
+
+# Calculate statistics
+mean_value = df_clean['value'].mean()
+std_dev = df_clean['value'].std()
+                </code></pre>
+                <aside class="notes">
+                    This slide shows a simple Python data processing example.
+                    Notice the syntax highlighting and line number highlighting features.
+                    Walk through each section step by step.
+                </aside>
+            </section>
+
+            <!-- Slide 4: Mathematical Equations (Financial Formulas) -->
+            <section>
+                <h2>Financial Mathematics</h2>
+                <p class="fragment" data-fragment-index="1">
+                    <strong>Present Value (PV):</strong><br>
+                    \[ PV = \frac{FV}{(1 + r)^n} \]
+                </p>
+                <p class="fragment" data-fragment-index="2">
+                    <strong>Future Value (FV):</strong><br>
+                    \[ FV = PV \times (1 + r)^n \]
+                </p>
+                <p class="fragment" data-fragment-index="3">
+                    <strong>Compound Annual Growth Rate (CAGR):</strong><br>
+                    \[ CAGR = \left(\frac{FV}{PV}\right)^{\frac{1}{n}} - 1 \]
+                </p>
+                <aside class="notes">
+                    These are fundamental financial formulas used in investment analysis.
+                    PV = Present Value, FV = Future Value, r = rate of return, n = number of periods.
+                    Explain each formula with real-world examples.
+                </aside>
+            </section>
+
+            <!-- Slide 5: More Code with Fragments -->
+            <section>
+                <h2>JavaScript Example</h2>
+                <pre class="fragment"><code class="javascript" data-trim>
+// Calculate financial metrics
+function calculateCAGR(initialValue, finalValue, years) {
+    return Math.pow(finalValue / initialValue, 1 / years) - 1;
+}
+
+// Example usage
+const cagr = calculateCAGR(1000, 1500, 3);
+console.log(`CAGR: ${(cagr * 100).toFixed(2)}%`);
+                </code></pre>
+                <p class="fragment">Result: CAGR ≈ 14.47%</p>
+                <aside class="notes">
+                    This JavaScript function implements the CAGR formula we saw earlier.
+                    The example shows an investment growing from 1000 to 1500 over 3 years.
+                    This demonstrates how to apply mathematical concepts in code.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Another Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Key Data Science Tools
+                    
+                    ### Python Ecosystem
+                    - NumPy: Numerical computing <!-- .element: class="fragment fade-in-then-semi-out" -->
+                    - Pandas: Data manipulation <!-- .element: class="fragment fade-in-then-semi-out" -->
+                    - Scikit-learn: Machine learning <!-- .element: class="fragment fade-in-then-semi-out" -->
+                    - Matplotlib/Seaborn: Visualization <!-- .element: class="fragment fade-in-then-semi-out" -->
+                    
+                    Note:
+                    These are the essential tools every data scientist should know.
+                    Each library serves a specific purpose in the data analysis pipeline.
+                </textarea>
+            </section>
+
+            <!-- Slide 7: More Mathematical Equations -->
+            <section>
+                <h2>Statistical Formulas</h2>
+                <div class="fragment" data-fragment-index="1">
+                    <p><strong>Mean (Average):</strong></p>
+                    \[ \mu = \frac{1}{n}\sum_{i=1}^{n} x_i \]
+                </div>
+                <div class="fragment" data-fragment-index="2">
+                    <p><strong>Standard Deviation:</strong></p>
+                    \[ \sigma = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \mu)^2} \]
+                </div>
+                <div class="fragment" data-fragment-index="3">
+                    <p><strong>Sharpe Ratio (Risk-Adjusted Return):</strong></p>
+                    \[ S = \frac{R_p - R_f}{\sigma_p} \]
+                </div>
+                <aside class="notes">
+                    These statistical formulas are crucial for financial analysis.
+                    The Sharpe Ratio helps evaluate risk-adjusted returns of investments.
+                    Higher Sharpe Ratio indicates better risk-adjusted performance.
+                </aside>
+            </section>
+
+            <!-- Slide 8: Final Slide -->
+            <section>
+                <h1>Thank You!</h1>
+                <p>Questions?</p>
+                <p>
+                    <small>Contact: <a href="mailto:23f3001608@ds.study.iitm.ac.in">23f3001608@ds.study.iitm.ac.in</a></small>
+                </p>
+                <aside class="notes">
+                    Thank the audience for their attention.
+                    Open the floor for questions and discussion.
+                    Provide contact information for follow-up.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/plugin/math/math.js"></script>
+    
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
