@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - copilot/create-revealjs-presentation
   workflow_dispatch:
 
 permissions:
